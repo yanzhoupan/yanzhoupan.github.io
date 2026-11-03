@@ -2,6 +2,14 @@
   url: https://icml.cc/
   color: "#4c1d95"
 
+"ICLR":
+  url: https://iclr.cc/
+  color: "#1d4ed8"
+
+"EMNLP":
+  url: https://2025.emnlp.org/
+  color: "#b45309"
+
 "NAACL":
   url: https://naacl.org/
   color: "#0f766e"

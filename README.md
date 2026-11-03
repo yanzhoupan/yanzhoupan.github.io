@@ -6,12 +6,11 @@ Built with [al-folio](https://github.com/alshedivat/al-folio) (Jekyll) and deplo
 
 ## Pages
 
-- **About** — professional bio and recent news: `_pages/about.md`
-- **Experience** — work and research experience: `_pages/experience.md` + `_data/cv.yml`
-- **Publications** — papers and preprints: `_bibliography/papers.bib`
-- **Contact** — email and professional links: `_pages/contact.md`
+- **About** — bio, avatar, recent news, selected papers, and contact links: `_pages/about.md`
+- **Experience** — work experience and education: `_pages/experience.md` + `_data/cv.yml`
+- **Publications** — complete paper list: `_bibliography/papers.bib`
 
-The site intentionally uses no personal photos. The favicon is a simple monogram.
+Contact details live on the About page and in the footer, so there is no separate Contact page. The site supports light and dark themes only.
 
 ## Local development
 

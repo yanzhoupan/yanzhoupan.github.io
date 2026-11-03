@@ -21,6 +21,15 @@ cv:
           - Co-authored an ICML 2025 position paper on iterative online-offline optimization for LLM copyright risk.
           - Contributed to research on socially aligned synthetic data for AI evaluation (NodeSyn) and autonomous scientific discovery (ScientistTwo).
 
+      - company: LinkedIn Corporation
+        position: Machine Learning Engineer Intern
+        location: Sunnyvale, CA
+        date: 2020-05
+        highlights:
+          - Raised the AUC of job-search click-through-rate prediction by over 3.5% using negative down-sampling.
+          - Implemented TensorFlow deep-learning APIs for the job marketplace, including stochastic and detail-preserving pooling, with offline tests and online A/B tests.
+          - Designed a module analyzer for top-ranked job posts, saving 50 minutes per offline model test.
+
       - company: Wuhan GEETEST Network Technology Co., Ltd.
         position: Machine Learning and Data Analysis Intern
         location: Wuhan, China
@@ -36,8 +45,32 @@ cv:
         position: Research Assistant, State Key Laboratory of Software Engineering
         location: Wuhan, China
         start_date: 2018-02
-        end_date: 2018-10
+        end_date: 2019-05
         highlights:
           - Proposed a fast similarity measure for large-scale time-series clustering, reducing runtime by about 30% without sacrificing accuracy.
           - Introduced a semi-supervised side-information generation strategy (SGS) that improved clustering quality by about 5%.
           - "Co-authored the resulting paper published in IEEE Transactions on Systems, Man, and Cybernetics: Systems."
+
+    Education:
+      - institution: Rice University
+        studyType: M.S. in Computer Science
+        location: Houston, TX
+        start_date: 2019-08
+        end_date: 2020-12
+        highlights:
+          - "GPA: 3.7/4.0"
+
+      - institution: Wuhan University
+        studyType: B.E. in Computer Science
+        location: Wuhan, China
+        start_date: 2015-09
+        end_date: 2019-06
+        highlights:
+          - "GPA: 3.64/4.0 (top 10%)"
+
+      - institution: UC Berkeley
+        studyType: Exchange Student in Computer Science
+        location: Berkeley, CA
+        date: 2018-02
+        highlights:
+          - "GPA: 3.6/4.0"

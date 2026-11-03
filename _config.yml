@@ -6,9 +6,7 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Yanzhou
 middle_name:
 last_name: Pan
-contact_note: >
-  The best way to reach me is by email. I am always happy to connect about
-  research, engineering, and collaboration.
+contact_note: ""
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Yanzhou Pan is a Senior Research Engineer at Google working on trustworthy
   large language models, data valuation, and agentic AI systems.
@@ -513,7 +511,7 @@ third_party_libraries:
     version: "5.5.0"
   google_fonts:
     url:
-      fonts: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap"
+      fonts: "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap"
   highlightjs:
     integrity:
       css:
