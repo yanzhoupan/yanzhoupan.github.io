@@ -1,0 +1,120 @@
+@inproceedings{pan2025iterative,
+  title     = {Position: Iterative Online-Offline Joint Optimization is Needed to Manage Complex LLM Copyright Risks},
+  author    = {Pan, Yanzhou and Chen, Jiayi and Chen, Jiamin and Xu, Zhaozhuo and Zhang, Denghui},
+  booktitle = {Proceedings of the 42nd International Conference on Machine Learning (ICML)},
+  year      = {2025},
+  abbr      = {ICML},
+  selected  = {true},
+  bibtex_show = {true},
+  html      = {https://openreview.net/forum?id=hxwIndG0Z8}
+}
+
+@inproceedings{pan2025alinfik,
+  title     = {ALinFiK: Learning to Approximate Linearized Future Influence Kernel for Scalable Third-Party LLM Data Valuation},
+  author    = {Pan, Yanzhou and Lin, Huawei and Ran, Yide and Chen, Jiamin and Yu, Xiaodong and Zhao, Weijie and Zhang, Denghui and Xu, Zhaozhuo},
+  booktitle = {Proceedings of the 2025 Conference of the North American Chapter of the Association for Computational Linguistics (NAACL)},
+  year      = {2025},
+  abbr      = {NAACL},
+  selected  = {true},
+  bibtex_show = {true},
+  arxiv     = {2503.01052},
+  html      = {https://aclanthology.org/2025.naacl-long.589/},
+  abstract  = {Large Language Models (LLMs) heavily rely on high-quality training data, making data valuation crucial for optimizing model performance, especially when working within a limited budget. In this work, we aim to offer a third-party data valuation approach that benefits both data providers and model developers. We introduce a linearized future influence kernel (LinFiK), which assesses the value of individual data samples in improving LLM performance during training. We further propose ALinFiK, a learning strategy to approximate LinFiK, enabling scalable data valuation. Our comprehensive evaluations demonstrate that this approach surpasses existing baselines in effectiveness and efficiency, demonstrating significant scalability advantages as LLM parameters increase.}
+}
+
+@article{zhang2025isacl,
+  title     = {ISACL: Internal State Analyzer for Copyrighted Training Data Leakage},
+  author    = {Zhang, Guangwei and Su, Qisheng and Liu, Jiateng and Qian, Cheng and Pan, Yanzhou and Fu, Yanjie and Zhang, Denghui},
+  journal   = {arXiv preprint arXiv:2508.17767},
+  year      = {2025},
+  abbr      = {arXiv},
+  selected  = {true},
+  bibtex_show = {true},
+  arxiv     = {2508.17767},
+  abstract  = {Large Language Models (LLMs) have revolutionized Natural Language Processing (NLP) but pose risks of inadvertently exposing copyrighted or proprietary data, especially when such data is used for training but not intended for distribution. Traditional methods address these leaks only after content is generated, which can lead to the exposure of sensitive information. This study introduces a proactive approach: examining LLMs' internal states before text generation to detect potential leaks. By using a curated dataset of copyrighted materials, we trained a neural network classifier to identify risks, allowing for early intervention by stopping the generation process or altering outputs to prevent disclosure. Integrated with a Retrieval-Augmented Generation (RAG) system, this framework ensures adherence to copyright and licensing requirements while enhancing data privacy and ethical standards. Our results show that analyzing internal states effectively mitigates the risk of copyrighted data leakage, offering a scalable solution that fits smoothly into AI workflows, ensuring compliance with copyright regulations while maintaining high-quality text generation.}
+}
+
+@article{wang2025context,
+  title     = {Context Engineering for Trustworthiness: Rescorla Wagner Steering Under Mixed and Inappropriate Contexts},
+  author    = {Wang, Rushi and Liu, Jiateng and Qian, Cheng and Shen, Yifan and Pan, Yanzhou and Xu, Zhaozhuo and Abbasi, Ahmed and Ji, Heng and Zhang, Denghui},
+  journal   = {arXiv preprint arXiv:2509.04500},
+  year      = {2025},
+  abbr      = {arXiv},
+  bibtex_show = {true},
+  arxiv     = {2509.04500},
+  abstract  = {Incorporating external context can significantly enhance the response quality of Large Language Models (LLMs). However, real-world contexts often mix relevant information with disproportionate inappropriate content, posing reliability risks. How do LLMs process and prioritize mixed context? To study this, we introduce the Poisoned Context Testbed, pairing queries with real-world contexts containing relevant and inappropriate content. Inspired by associative learning in animals, we adapt the Rescorla-Wagner (RW) model from neuroscience to quantify how competing contextual signals influence LLM outputs. Our adapted model reveals a consistent behavioral pattern: LLMs exhibit a strong tendency to incorporate information that is less prevalent in the context. This susceptibility is harmful in real-world settings, where small amounts of inappropriate content can substantially degrade response quality. Empirical evaluations on our testbed further confirm this vulnerability. To tackle this, we introduce RW-Steering, a two-stage finetuning-based approach that enables the model to internally identify and ignore inappropriate signals. Unlike prior methods that rely on extensive supervision across diverse context mixtures, RW-Steering generalizes robustly across varying proportions of inappropriate content. Experiments show that our best fine-tuned model improves response quality by 39.8 percent and reverses the undesirable behavior curve, establishing RW-Steering as a robust, generalizable context engineering solution for improving LLM safety in real-world use.}
+}
+
+@article{ran2025mitigating,
+  title     = {Mitigating Non-IID Drift in Zeroth-Order Federated LLM Fine-Tuning with Transferable Sparsity},
+  author    = {Ran, Yide and Guo, Wentao and Sun, Jingwei and Pan, Yanzhou and Yu, Xiaodong and Wang, Hao and Xie, Jianwen and Chen, Yiran and Zhang, Denghui and Xu, Zhaozhuo},
+  journal   = {arXiv preprint arXiv:2506.03337},
+  year      = {2025},
+  abbr      = {arXiv},
+  bibtex_show = {true},
+  arxiv     = {2506.03337},
+  abstract  = {Federated Learning enables collaborative fine-tuning of Large Language Models (LLMs) across decentralized Non-Independent and Identically Distributed (Non-IID) clients, but such models' massive parameter sizes lead to significant memory and communication challenges. This work introduces Meerkat, a sparse zeroth-order optimization (ZO) method designed for federated LLM fine-tuning. By limiting fine-tuning to a transferable, static, extremely sparse subset of parameters, Meerkat achieves remarkable communication efficiency, enabling cost-effective high-frequency synchronization. With theoretical analysis and experiments, we show that this high-frequency communication effectively mitigates Non-IID data challenges and leads to superior performance compared to full-parameter ZO. Furthermore, experiment results show that Meerkat outperforms existing sparsity baselines with better performance at the same communication frequency. To further handle Non-IID drift, Meerkat leverages traceable local updates and forms a virtual path for each client. This virtual path mechanism reveals the GradIP phenomenon: the inner products between LLM pre-training gradients maintained by server and client gradients estimated via ZO converges for extreme Non-IID clients but oscillates for IID ones. This distinct behavior provides a signal for identifying clients with extreme data heterogeneity. Using this signal, Meerkat-vp is proposed to analyze GradIP trajectories to identify extreme Non-IID clients and applies early stopping to enhance aggregated model quality. Experiments confirm that Meerkat and Meerkat-vp significantly improve the efficiency and effectiveness of ZO federated LLM fine-tuning.}
+}
+
+@article{desai2021scma,
+  title     = {Semantically Constrained Memory Allocation (SCMA) for Embedding in Efficient Recommendation Systems},
+  author    = {Desai, Aditya and Pan, Yanzhou and Sun, Kuangyuan and Chou, Li and Shrivastava, Anshumali},
+  journal   = {arXiv preprint arXiv:2103.06124},
+  year      = {2021},
+  abbr      = {arXiv},
+  selected  = {true},
+  bibtex_show = {true},
+  arxiv     = {2103.06124},
+  abstract  = {Deep learning-based models are utilized to achieve state-of-the-art performance for recommendation systems. A key challenge for these models is to work with millions of categorical classes or tokens. The standard approach is to learn end-to-end, dense latent representations or embeddings for each token. The resulting embeddings require large amounts of memory that blow up with the number of tokens. Training and inference with these models create storage, and memory bandwidth bottlenecks leading to significant computing and energy consumption when deployed in practice. To this end, we present the problem of Memory Allocation under budget for embeddings and propose a novel formulation of memory shared embedding, where memory is shared in proportion to the overlap in semantic information. Our formulation admits a practical and efficient randomized solution with Locality sensitive hashing based Memory Allocation (LMA). We demonstrate a significant reduction in the memory footprint while maintaining performance. In particular, our LMA embeddings achieve the same performance compared to standard embeddings with a 16x reduction in memory footprint. Moreover, LMA achieves an average improvement of over 0.003 AUC across different memory regimes than standard DLRM models on Criteo and Avazu datasets.}
+}
+
+@article{he2021fast,
+  title     = {A Fast Semi-Supervised Clustering Framework for Large-Scale Time Series Data},
+  author    = {He, Guoliang and Pan, Yanzhou and Xia, Xuewen and He, Jinrong and Peng, Rong and Xiong, Neal N.},
+  journal   = {IEEE Transactions on Systems, Man, and Cybernetics: Systems},
+  volume    = {51},
+  number    = {7},
+  pages     = {4201--4216},
+  year      = {2021},
+  abbr      = {IEEE TSMC},
+  selected  = {true},
+  bibtex_show = {true},
+  doi       = {10.1109/TSMC.2019.2931731}
+}
+
+@article{nam2026scientisttwo,
+  title     = {ScientistTwo: Pioneering the Human Knowledge Frontier with Autonomous AI},
+  author    = {Nam, Jaehyun and Yoon, Jinsung and Pan, Yanzhou and Wang, Yubo and Meng, Rui and Ranganathan, Parthasarathy and Pfister, Tomas},
+  journal   = {arXiv preprint arXiv:2609.19644},
+  year      = {2026},
+  abbr      = {arXiv},
+  selected  = {true},
+  bibtex_show = {true},
+  arxiv     = {2609.19644},
+  website   = {https://scientist-two.github.io/},
+  abstract  = {Scientific discovery is defined by the ability to identify the boundaries of existing knowledge and venture into unexplored territory. The ultimate vision for AI in science is problem-driven autonomous research: given a fundamental challenge by a human expert, the AI independently navigates the scientific landscape, uncovers theoretical and empirical bottlenecks, and systematically expands the frontier of knowledge. In this paper, we introduce ScientistTwo, a fully autonomous multi-agent framework designed to realize this vision. Specifically, ScientistTwo takes an initial problem as input, establishes state-of-the-art baselines, formulates novel hypotheses, and coordinates specialized agents to orchestrate an end-to-end discovery cycle without human intervention. Moreover, the framework rigorously conducts experiments using diverse datasets and metrics, refines methodologies through automated ablation studies, and validates research findings via a closed-loop simulated peer-review rebuttal engine. To evaluate ScientistTwo's capabilities against the highest standards of human scientific achievement, we benchmark it across papers accepted at top-tier conferences such as ICLR, ICML, and NeurIPS. As a result, ScientistTwo autonomously generates expert-level, publishable papers and fully verified, executable codebases. Its solutions consistently outperform human state-of-the-art models, and achieve higher average review ratings than human-authored papers under automated AI review agents. These results show that ScientistTwo is not merely an assistive tool but an autonomous scientific pioneer capable of pushing the frontiers of human discovery.}
+}
+
+@article{rashid2026nodesyn,
+  title     = {NodeSyn: Socially Aligned Synthetic Data for AI Evaluation},
+  author    = {Rashid, Qazi Mamunur and Yang, Xuan and Yang, Zhengzhe and Pan, Yanzhou and van Liemt, Erin and Neal, Darlene and Pancholi, Kshitij and Smith-Loud, Jamila},
+  journal   = {arXiv preprint arXiv:2605.14381},
+  year      = {2026},
+  abbr      = {arXiv},
+  bibtex_show = {true},
+  arxiv     = {2605.14381},
+  code      = {https://github.com/google-research/nodesynth},
+  abstract  = {Recent advancements in generative AI facilitate large-scale synthetic data generation for model evaluation. However, without targeted approaches, these datasets often lack the sociotechnical nuance required for sensitive domains. We introduce NodeSyn, a methodology that pairs a fine-tuned taxonomy generator (TaG) with credible published sources and extracted sensitive attributes to generate queries reflecting authentic societal contexts and nuanced harms. Evaluated across ten open-weight and proprietary LLMs in Medical Advice and Self-Harm using human-validated autoraters, NodeSyn ranked first on 8 of 10 models in each domain. NodeSyn datasets induced average failure rates 3.1 times higher than generic synthetic baselines, 2.4 times higher than structured synthetic benchmarks, and 1.6 times higher than authentic human-authored queries. Ablation studies confirm that, controlling for structural confounds, our granular Level 3 taxonomic expansion significantly drives these failure rates over Level 2 across 9 of 10 models (+29.2 percent relative lift in Medical Advice and +24.0 percent in Self-Harm). Variance attribution analysis reveals that failures are driven not only by what topics are queried (taxonomic nodes and lexical specificity), but also by their sociotechnical grounding (affected demographics, occupations, geographies, and querying personas). We embed this method into a research prototype, and open-source the code and datasets to enable scalable, high-stakes model evaluation.}
+}
+
+@article{li2026visground,
+  title     = {VIS-Ground: Video Interactive Storytelling with Contextual Grounding},
+  author    = {Li, Bingxuan and Song, Yiwen and Wu, Xueqing and Pan, Yanzhou and Li, Yang and Su, Kuang and Liu, Jingyun and Ko, Sebastian and Zhang, Huan and Zhang, Tong and Peng, Nanyun and Pfister, Tomas and Song, Yale},
+  journal   = {arXiv preprint arXiv:2610.09326},
+  year      = {2026},
+  abbr      = {arXiv},
+  bibtex_show = {true},
+  arxiv     = {2610.09326},
+  website   = {https://vis-ground.github.io},
+  abstract  = {Video interactive storytelling enables viewers to actively steer how a video unfolds. However, once we allow viewers to intervene during generation, a new challenge arises: The viewer's request can have latent dependencies on both the grounding source and the current rendered video state. These dependencies may not be explicitly stated in any individual input, but emerge only when the source, rendered history, and new viewer intent are considered jointly. Existing interactive video generation systems primarily emphasize following viewer instructions, while source-grounded video generation methods focus on aligning generated content with an external narrative or knowledge source. This leaves a fundamental question underexplored: What context should a generation model ground on during interactive continuation, and how can heterogeneous, unstructured inputs be transformed into such grounding context? In this work, we formulate contextual grounding as the process of transforming heterogeneous input context into an executable constraint model for video generation. To address this challenge, we introduce VIS-Ground, which performs Structured Context Abstraction to recover grounded states and cross-context dependencies, Generation Constraints Induction to project relevant dependencies into candidate-specific constraints, and Constrained Video Generation to enforce these constraints through planning, verification, revision, and rendering. Across three video generation backbones, VIS-Ground consistently achieves the highest overall composite score, reaching an average absolute improvement of 10.3 points over the strongest per-backbone baselines. Detailed analysis further shows gains across both narrative and knowledge grounding, and reveals remaining challenges in dependency extraction, and faithful realization during video rendering.}
+}

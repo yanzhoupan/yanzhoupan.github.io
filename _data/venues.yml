@@ -1,0 +1,15 @@
+"ICML":
+  url: https://icml.cc/
+  color: "#4c1d95"
+
+"NAACL":
+  url: https://naacl.org/
+  color: "#0f766e"
+
+"IEEE TSMC":
+  url: https://www.ieee.org/
+  color: "#1e3a8a"
+
+"arXiv":
+  url: https://arxiv.org/
+  color: "#b91c1c"

@@ -1,0 +1,43 @@
+cv:
+  sections:
+    Experience:
+      - company: Google
+        position: Senior Research Engineer
+        location: San Francisco Bay Area
+        start_date: 2026-07
+        end_date:
+        summary: Agentic AI systems and trustworthy large language models.
+        highlights:
+          - Build and evaluate agentic AI systems, with a focus on trustworthy LLM behavior.
+          - Research context steering, copyright-risk management, and evaluation methods for large language models.
+
+      - company: Google
+        position: Software Engineer
+        location: San Francisco Bay Area
+        start_date: 2022-07
+        end_date: 2026-07
+        highlights:
+          - Conducted research on third-party LLM data valuation; presented ALinFiK at NAACL 2025.
+          - Co-authored an ICML 2025 position paper on iterative online-offline optimization for LLM copyright risk.
+          - Contributed to research on socially aligned synthetic data for AI evaluation (NodeSyn) and autonomous scientific discovery (ScientistTwo).
+
+      - company: Wuhan GEETEST Network Technology Co., Ltd.
+        position: Machine Learning and Data Analysis Intern
+        location: Wuhan, China
+        start_date: 2018-12
+        end_date: 2019-07
+        summary: Data Security Department
+        highlights:
+          - Implemented CAPTCHA rules, including black-IP and track discrimination, for human-machine identification.
+          - Analyzed large-scale web CAPTCHA data using PySpark and Hadoop.
+          - Produced data-analysis reports and anomaly-processing recommendations for customers.
+
+      - company: Wuhan University
+        position: Research Assistant, State Key Laboratory of Software Engineering
+        location: Wuhan, China
+        start_date: 2018-02
+        end_date: 2018-10
+        highlights:
+          - Proposed a fast similarity measure for large-scale time-series clustering, reducing runtime by about 30% without sacrificing accuracy.
+          - Introduced a semi-supervised side-information generation strategy (SGS) that improved clustering quality by about 5%.
+          - "Co-authored the resulting paper published in IEEE Transactions on Systems, Man, and Cybernetics: Systems."
