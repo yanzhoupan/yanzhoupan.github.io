@@ -3,33 +3,36 @@
  * ------------------------------------------------------------------------- */
 
 :root {
-  --global-bg-color: #fbfaf7;
-  --global-text-color: #1a1c20;
-  --global-text-color-light: #5f636b;
+  /* Cool neutral canvas keeps the content white and the page chrome quiet. */
+  --global-page-bg-color: #f3f5f8;
+  --global-bg-color: #ffffff;
+  --global-text-color: #1b1f24;
+  --global-text-color-light: #5d6570;
   --global-theme-color: #8a2333;
   --global-hover-color: #a02a3c;
   --global-hover-text-color: #ffffff;
   --global-card-bg-color: #ffffff;
   --global-code-bg-color: rgba(138, 35, 51, 0.05);
-  --global-divider-color: rgba(26, 28, 32, 0.1);
-  --global-footer-bg-color: #16181c;
-  --global-footer-text-color: #d7d3ca;
-  --global-footer-link-color: #f5f2ec;
+  --global-divider-color: rgba(24, 28, 35, 0.09);
+  --global-footer-bg-color: #12161c;
+  --global-footer-text-color: #c9d0d9;
+  --global-footer-link-color: #ffffff;
   --global-highlight-color: #8a2333;
 }
 
 html[data-theme="dark"] {
-  --global-bg-color: #111214;
-  --global-text-color: #e8e5de;
-  --global-text-color-light: #9d9c98;
+  --global-page-bg-color: #0a0c10;
+  --global-bg-color: #12161c;
+  --global-text-color: #e6e9ee;
+  --global-text-color-light: #9aa4b2;
   --global-theme-color: #e39aa2;
   --global-hover-color: #f0b0b6;
   --global-hover-text-color: #111214;
-  --global-card-bg-color: #191b1e;
+  --global-card-bg-color: #12161c;
   --global-code-bg-color: rgba(227, 154, 162, 0.08);
-  --global-divider-color: rgba(255, 255, 255, 0.12);
-  --global-footer-bg-color: #0b0c0d;
-  --global-footer-text-color: #c9c6bf;
+  --global-divider-color: rgba(255, 255, 255, 0.1);
+  --global-footer-bg-color: #06080b;
+  --global-footer-text-color: #c9d0d9;
   --global-footer-link-color: #ffffff;
   --global-highlight-color: #e39aa2;
 }
@@ -50,6 +53,25 @@ footer {
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--global-page-bg-color);
+}
+
+/* Paper-like content surface on a quiet canvas. */
+.container[role="main"] > .post {
+  background-color: var(--global-card-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 12px;
+  padding: 2.5rem 2.75rem;
+  box-shadow:
+    0 1px 2px rgba(16, 24, 40, 0.04),
+    0 16px 40px -20px rgba(16, 24, 40, 0.16);
+}
+
+@media (max-width: 575.98px) {
+  .container[role="main"] > .post {
+    border-radius: 10px;
+    padding: 1.35rem 1.25rem;
+  }
 }
 
 h1,
