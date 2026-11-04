@@ -1,6 +1,6 @@
 ---
 layout: cv
-title: experience
+title: Experience
 permalink: /experience/
 description: Research and engineering experience across Google and academia.
 nav: true

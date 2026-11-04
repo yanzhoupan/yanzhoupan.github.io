@@ -1,16 +1,15 @@
 # yanzhoupan.github.io
 
-Personal website of **Yanzhou Pan** — Senior Research Engineer at Google, working on trustworthy large language models, data valuation, and agentic AI systems.
+Personal website of **Yanzhou Pan** — Senior Research Engineer at Google, working on agentic AI, data valuation, and trustworthy large language models.
 
 Built with [al-folio](https://github.com/alshedivat/al-folio) (Jekyll) and deployed to GitHub Pages at <https://yanzhoupan.github.io/>.
 
 ## Pages
 
-- **About** — bio, avatar, recent news, selected papers, and contact links: `_pages/about.md`
+- **About** — bio, avatar, contact links, recent news, and the complete publication list: `_pages/about.md`
 - **Experience** — work experience and education: `_pages/experience.md` + `_data/cv.yml`
-- **Publications** — complete paper list: `_bibliography/papers.bib`
 
-Contact details live on the About page and in the footer, so there is no separate Contact page. The site supports light and dark themes only.
+Contact details sit at the top of the About page, so there is no separate Contact page, and the small publication list lives directly on About instead of a dedicated tab. The site supports light and dark themes only.
 
 ## Local development
 

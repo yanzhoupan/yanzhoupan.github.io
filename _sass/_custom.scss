@@ -82,6 +82,27 @@ h6,
   margin-top: 0.5rem;
 }
 
+.contact-links-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1.15rem;
+  margin-top: 0.9rem;
+  font-size: 0.9rem;
+}
+
+.contact-links-top a {
+  color: var(--global-text-color-light);
+  text-decoration: none;
+}
+
+.contact-links-top a:hover {
+  color: var(--global-theme-color);
+}
+
+.contact-links-top i {
+  margin-right: 0.35rem;
+}
+
 .post h2 {
   font-size: 1.5rem;
   margin-top: 2.25rem;

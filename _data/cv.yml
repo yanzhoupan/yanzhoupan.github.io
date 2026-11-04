@@ -6,7 +6,7 @@ cv:
         location: San Francisco Bay Area
         start_date: 2026-07
         end_date:
-        summary: Agentic AI systems and trustworthy large language models.
+        summary: Agentic AI systems, data valuation, and trustworthy large language models.
         highlights:
           - Build and evaluate agentic AI systems, with a focus on trustworthy LLM behavior.
           - Research context steering, copyright-risk management, and evaluation methods for large language models.

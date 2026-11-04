@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /news/
-title: news
+title: News
 description: Recent papers, talks, and professional updates.
 nav: false
 ---
