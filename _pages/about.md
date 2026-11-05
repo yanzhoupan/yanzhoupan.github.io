@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Senior Research Engineer at Google · Agentic AI, Data Valuation, and Trustworthy LLMs
+subtitle: Senior Research Engineer at Google · Agentic AI Systems, Data Valuation, and Trustworthy LLMs
 
 profile:
   align: right
@@ -20,7 +20,7 @@ latest_posts:
   enabled: false
 ---
 
-I am a Senior Research Engineer at Google. My work spans agentic AI, data valuation, and trustworthy large language models. I focus on making LLM training data and model behavior measurable and accountable through data valuation, copyright-risk analysis, context steering, and synthetic data for safety evaluation.
+I am a Senior Research Engineer at Google. My work spans agentic AI systems, data valuation, and trustworthy large language models. I focus on making LLM training data and model behavior measurable and accountable through data valuation, copyright-risk analysis, context steering, and synthetic data for safety evaluation.
 
 My work has appeared at ICML, NAACL, and EMNLP. Before joining Google, I received an M.S. in Computer Science from Rice University and a B.E. in Computer Science from Wuhan University, with an exchange program at UC Berkeley. I am based in the San Francisco Bay Area.
 

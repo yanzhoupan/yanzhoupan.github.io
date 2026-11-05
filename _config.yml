@@ -8,7 +8,7 @@ middle_name:
 last_name: Pan
 contact_note: ""
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Yanzhou Pan is a Senior Research Engineer at Google working on agentic AI,
+  Yanzhou Pan is a Senior Research Engineer at Google working on agentic AI systems,
   data valuation, and trustworthy large language models.
 footer_text: >
   Built with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>
