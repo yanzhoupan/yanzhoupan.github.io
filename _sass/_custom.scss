@@ -196,9 +196,20 @@ html[data-theme="dark"] .profile img {
 }
 
 .publications .preview {
-  max-height: 230px;
-  margin: 0 auto;
+  aspect-ratio: 2 / 1;
+  object-fit: contain;
   background: #ffffff;
+}
+
+.publications .title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.publications .title a:hover {
+  color: var(--global-theme-color);
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
 }
 
 html[data-theme="dark"] .publications .preview-link {

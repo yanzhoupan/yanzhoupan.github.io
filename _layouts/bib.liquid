@@ -1,32 +1,33 @@
 ---
 ---
+{% assign entry_link = '' %}
+{% if entry.html %}
+  {% if entry.html contains '://' %}
+    {% assign entry_link = entry.html %}
+  {% else %}
+    {% assign entry_link = entry.html | prepend: '/assets/html/' | relative_url %}
+  {% endif %}
+{% elsif entry.arxiv %}
+  {% assign entry_link = 'https://arxiv.org/abs/' | append: entry.arxiv %}
+{% elsif entry.doi %}
+  {% assign entry_link = 'https://doi.org/' | append: entry.doi %}
+{% elsif entry.pdf %}
+  {% if entry.pdf contains '://' %}
+    {% assign entry_link = entry.pdf %}
+  {% else %}
+    {% assign entry_link = entry.pdf | prepend: '/assets/pdf/' | relative_url %}
+  {% endif %}
+{% elsif entry.website %}
+  {% assign entry_link = entry.website %}
+{% endif %}
+
 <div class="row">
   {% if site.enable_publication_thumbnails %}
     {%- comment -%}
       Local override of the theme's bib layout:
-      - the image itself links to the paper, so no separate arXiv/venue badge is needed;
-      - a 4/8 column split uses the full row and makes thumbnails noticeably larger.
+      - the image and title both link to the paper;
+      - a 3/9 column split keeps the thumbnail compact while using the full row.
     {%- endcomment -%}
-    {% assign entry_link = '' %}
-    {% if entry.html %}
-      {% if entry.html contains '://' %}
-        {% assign entry_link = entry.html %}
-      {% else %}
-        {% assign entry_link = entry.html | prepend: '/assets/html/' | relative_url %}
-      {% endif %}
-    {% elsif entry.arxiv %}
-      {% assign entry_link = 'https://arxiv.org/abs/' | append: entry.arxiv %}
-    {% elsif entry.doi %}
-      {% assign entry_link = 'https://doi.org/' | append: entry.doi %}
-    {% elsif entry.pdf %}
-      {% if entry.pdf contains '://' %}
-        {% assign entry_link = entry.pdf %}
-      {% else %}
-        {% assign entry_link = entry.pdf | prepend: '/assets/pdf/' | relative_url %}
-      {% endif %}
-    {% elsif entry.website %}
-      {% assign entry_link = entry.website %}
-    {% endif %}
 
     <div class="col-12 col-sm-3 abbr">
       {% if entry.preview %}
@@ -79,7 +80,13 @@
   <!-- Entry bib key -->
   <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-12 col-sm-9{% else %}col-12 col-sm-10{% endif %}">
     <!-- Title -->
-    <div class="title">{{ entry.title }}</div>
+    <div class="title">
+      {% if entry_link != '' %}
+        <a class="title-link" href="{{ entry_link }}" target="_blank" rel="noopener noreferrer">{{ entry.title }}</a>
+      {% else %}
+        {{ entry.title }}
+      {% endif %}
+    </div>
     <!-- Author -->
     <div class="author">
       {% assign author_array_size = entry.author_array | size %}
