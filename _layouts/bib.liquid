@@ -38,9 +38,14 @@
           an extension it does not recognize falls through to its <iframe> branch.
           See alshedivat/al-folio#3564.
         {%- endcomment -%}
+        {% assign preview_bg_url = entry.preview %}
+        {% unless entry.preview contains '://' %}
+          {% assign preview_bg_url = entry.preview | prepend: '/assets/img/publication_preview/' | relative_url %}
+        {% endunless %}
         {% if entry_link != '' %}
           <a
             class="preview-link"
+            style="--preview-bg: url('{{ preview_bg_url }}')"
             href="{{ entry_link }}"
             target="_blank"
             rel="noopener noreferrer"
