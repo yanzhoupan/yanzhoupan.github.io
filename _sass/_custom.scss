@@ -199,6 +199,8 @@ html[data-theme="dark"] .profile img {
   display: block;
   width: 100%;
   height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
   margin: 0;
   background: #ffffff;
 }
