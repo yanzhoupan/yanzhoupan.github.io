@@ -196,8 +196,10 @@ html[data-theme="dark"] .profile img {
 }
 
 .publications .preview {
-  aspect-ratio: 2 / 1;
-  object-fit: contain;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
   background: #ffffff;
 }
 
