@@ -3,32 +3,43 @@ cv:
     Experience:
       - company: Google
         position: Senior Research Engineer
-        location: San Francisco Bay Area
+        location: Mountain View, CA
         start_date: 2026-07
         end_date:
-        summary: Agentic AI systems, data valuation, and trustworthy large language models.
+        summary: "Multi-agent AI systems: automated research, time-series forecasting, and long video generation."
         highlights:
-          - Build and evaluate agentic AI systems, with a focus on trustworthy LLM behavior.
-          - Research context steering, copyright-risk management, and evaluation methods for large language models.
+          - Designed and led a multi-agent auto-research framework (ScientistTwo) that chains planner, experimenter, and reviewer agents into an end-to-end loop, from hypothesis generation through experiment execution and self-critique, automating large parts of the scientific discovery process.
+          - Built a multi-agent time-series forecasting system that decomposes prediction into decomposition, signal-retrieval, and backtesting agents, improving accuracy over strong single-model baselines while making every forecast verifiable and explainable.
+          - Led multi-agent orchestration for long video generation (VIS-Ground), coordinating script-planning, shot-generation, and contextual-grounding agents so that characters, scenes, and narrative stay consistent across multi-minute videos.
 
       - company: Google
-        position: Software Engineer
-        location: San Francisco Bay Area
+        position: Senior Software Engineer
+        location: Mountain View, CA
         start_date: 2022-07
         end_date: 2026-07
+        summary: "Research on LLM data valuation and copyright-risk management (NAACL 2025, ICML 2025)."
         highlights:
-          - Conducted research on third-party LLM data valuation; presented ALinFiK at NAACL 2025.
-          - Co-authored an ICML 2025 position paper on iterative online-offline optimization for LLM copyright risk.
-          - Contributed to research on socially aligned synthetic data for AI evaluation (NodeSyn) and autonomous scientific discovery (ScientistTwo).
+          - Led the Multi-Modal Autorater system for evaluating large volumes of text, video, audio, and image content, reducing evaluation time from O(weeks) to O(hours) and saving the team $3M+ annually in human evaluation costs.
+          - Designed and implemented a scalable evaluation platform supporting both programmatic and human evaluation, powering the quality evaluation of 1M+ pieces of content across 20+ Google Play projects.
+          - Initiated and managed cross-functional collaboration with the YouTube team to resolve critical product and legal issues, enabling the integration of YouTube data into the Google Play Content Quality system.
+
+      - company: Wish (ContextLogic Inc.)
+        position: Software Engineer
+        location: San Francisco, CA
+        start_date: 2021-02
+        end_date: 2022-07
+        highlights:
+          - Designed and built the Wish clip video backend in Golang and Python, serving 500K+ product videos across its data pipelines, candidate generation logic, and ranking/filtering logic.
+          - Designed and developed the product exploration system, a cold-start system that blends 50K new products per day into organic recommendation results based on relevance.
+          - Implemented a personalized product filtering algorithm that removes previously shown products from the product page, increasing product impressions by 1.8%.
 
       - company: LinkedIn Corporation
         position: Machine Learning Engineer Intern
         location: Sunnyvale, CA
         date: 2020-05
         highlights:
-          - Raised the AUC of job-search click-through-rate prediction by over 3.5% using negative down-sampling.
-          - Implemented TensorFlow deep-learning APIs for the job marketplace, including stochastic and detail-preserving pooling, with offline tests and online A/B tests.
-          - Designed a module analyzer for top-ranked job posts, saving 50 minutes per offline model test.
+          - Implemented deep learning APIs for job marketplace products in TensorFlow, including stochastic pooling and detail-preserving pooling, raising the AUC of job-search click-through-rate (CTR) prediction by 1.5%.
+          - Designed and developed a module analyzer for job posts ranked at position one, saving 50% of local testing time.
 
       - company: Wuhan GEETEST Network Technology Co., Ltd.
         position: Machine Learning and Data Analysis Intern
