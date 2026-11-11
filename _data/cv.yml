@@ -8,9 +8,9 @@ cv:
         end_date:
         summary: "Multi-agent AI systems: automated research, time-series forecasting, and long video generation."
         highlights:
-          - Designed and led a multi-agent auto-research framework (ScientistTwo) that chains planner, experimenter, and reviewer agents into an end-to-end loop, from hypothesis generation through experiment execution and self-critique, automating large parts of the scientific discovery process.
-          - Built a multi-agent time-series forecasting system that decomposes prediction into decomposition, signal-retrieval, and backtesting agents, improving accuracy over strong single-model baselines while making every forecast verifiable and explainable.
-          - Led multi-agent orchestration for long video generation (VIS-Ground), coordinating script-planning, shot-generation, and contextual-grounding agents so that characters, scenes, and narrative stay consistent across multi-minute videos.
+          - Develop multi-agent workflows for automated research, supporting hypothesis generation, experimentation, and iterative refinement.
+          - Design and evaluate multi-agent approaches to time-series forecasting, focusing on agent collaboration and predictive performance.
+          - Develop multi-agent workflows for long video generation, focusing on narrative coherence and visual consistency.
 
       - company: Google
         position: Senior Software Engineer
